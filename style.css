@@ -1,15 +1,4 @@
 
-            
-            .headers{
-                font-family: verdana;
-                color:whitesmoke;
-                position: absolute;
-                left: 200px;
-                 top: 400px;
-               text-decoration: none;
-               position: fixed;
-               background-attachment: fixed;
-            }
             input[type=text], select {
                 left: 300px;
                 top: 300px;
@@ -22,7 +11,7 @@
                 box-sizing: border-box;
                  
 			}
-			input[type=email], select {
+		input[type=email], select {
                 left: 300px;
                 top: 300px;
                 width: 30%;
@@ -87,11 +76,5 @@
 			input:checked {
 			    height: 20px;
 			    width: 20px;
-			}
-	        .topright {
-			    position: absolute;
-			    top: 8px;
-			    right: 60px;
-			    font-size: 32px;
 			}
 			    
