@@ -1,4 +1,4 @@
-//This function will validate the forms user name ..  User Name should be alphabetic only
+//This function will validate the forms user name ..  User Name should be alphabetic only...
         function nameValidator(s)
         {
            var name = s.value;
