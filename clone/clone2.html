@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html><head>
+        <title>Truck Dispatch Software | Uber For Trucking App Development | Jugnoo </title>
+        <script type="text/javascript">
+        	let changeImage = (str) =>{
+        		if(str==='one'){
+        			document.getElementById("image").src="truckj_customer.png";
+
+        		}
+        		else if(str==='two')
+        		{
+        			document.getElementById("image").src="driver_2.png";
+        		}
+        		else if(str==='three'){
+        			document.getElementById("image").src="dispacther_dashboard.png";
+        		}
+        		else{
+        			document.getElementById("image").src="admin_dashboard.png";
+        		}
+
+        	}
+        </script>
+        <style>
+                body{
+                    margin :0px;
+                }
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: rgb(255, 255, 255);
+                    height: 55px;
+                    border-bottom: 1px solid rgb(255, 123, 0);
+                    font-family: sans-serif;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+                
+                li {
+                    float: left;
+                    margin-top: -8px;
+                }
+                .bodyContainer{
+                	display: flex;
+                	flex-direction:column;
+                	}
+                li a, .dropbtn {
+                    display: inline-block;
+                    color: rgb(92, 89, 89);
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                li a:hover, .dropdown:hover .dropbtn {
+                    color: rgb(255, 123, 0);
+                }
+                
+                li.dropdown {
+                    display: inline-block;
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #ffffff;
+                    min-width: 160px;        
+                    z-index: 1;
+                }
+                
+                .dropdown-content a {
+                    color: rgb(119, 117, 117);
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+                
+                .dropdown-content a:hover {color: rgb(255, 123, 0);}
+                
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+                .div1{
+                	
+                }
+                .div2{
+                    background-image: url("banner-truck.jpg");
+                    height:800px;
+                    display: flex;
+    flex-direction: column;
+        justify-content: center
+
+                }
+                .div2Container{
+                	position: relative;
+                }
+                .div2 h1,p{
+                    
+                    vertical-align: baseline;
+                    font-family: 'Nunito', sans-serif!important;
+                    color:white;
+                    padding: 10px;
+                    align-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    text-align: center;
+                    position: relative;
+                    font-weight: normal;
+                    line-height: 1.3;
+                    letter-spacing: -0.6px;
+                    text-align: center;
+                   
+                    margin-top: 20px;
+                    margin-bottom: 0px;
+                }
+                .div2 p{
+                	font-size: 15px;
+                	padding-left: 20px;
+                	padding-right: 20px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 1.3;
+                    letter-spacing: -0.2px;
+                    margin: 0 auto;
+
+                }
+                .div2 form,button{
+                    text-align: center;
+                }
+                .div2 button{
+                    border-radius: 10px;
+                    height: 50px;
+                    width:150px;
+                    background-color: orange;
+                    border:none;
+                }
+                .div2 input{
+                    border-radius: 10px;
+                    height: 45px;
+                    width: 300px;
+                }
+                .div3Container{
+                	display: flex;
+                	flex-direction: row;
+                	margin-left: 15%;
+                	margin-right: 15%;
+
+                }
+                .div3Container div{
+
+                	display: flex;
+                	flex-direction: column;
+                	align-content: center;
+                	height: 400px;
+                	width: 900px;
+                	margin: 20px;
+                }
+                #div3ContainerBox:hover{
+                	background-color: orange;
+                	transition: 0.5s;
+                	color: white;
+                }
+                @media screen and(max-width: 999px)
+                {
+                    #div3ContainerBox div{
+                    background-color: #f5f8f9;
+                    padding: 30px;
+                    display: inline;
+                    
+                }
+                }
+                #div3ContainerBox{
+                	background-color: #f5f8f9;
+                	padding: 30px;
+                	display: flex;
+                	flex-direction: column;
+                	align-content: space-between;
+                	border-radius: 5px;
+                }
+                .div4Container{
+                	display: flex;
+                	margin: 10px;
+                	padding: 100px;
+                	padding-left: 300px;
+                	align-items: flex-start;
+                	align-content: space-between;
+                }
+                .div4Container button{
+                	border-radius: 10px;
+                    height: 50px;
+                    width:150px;
+                    background-color: orange;
+                    border:solid;
+                    border-color: grey;
+                    align-content: center;
+                    overflow: auto;
+                }
+                .div5{
+                	display: flex;
+                	align-items: center;
+                	float: center;
+                    margin: 0 auto;
+                    margin-top: 50px;
+                }
+                .div5Container{
+                	background-color: #353542;
+                    color: #ffffff;
+                    font-family:  'Nunito', sans-serif!important;
+                	text-align: center;
+                	left: 10%;
+                	height: 250px;
+                	width: 80%;
+                	position: relative;
+                }
+                .div5Container button{
+
+                	border-radius: 10px;
+                    height: 50px;
+                    width:150px;
+                    background-color: orange;
+                    border:none;	
+                }
+                .div6Container{
+                	display: flex;
+                	flex-direction: row;
+                	
+                	justify-content: center;
+                  	padding-left: 20%;
+                	padding-right: 20%;
+                }
+                .div6Container div{
+                	background-color: rgb(228, 228, 231);
+                }
+                .div6Container div div:hover{
+                	background-color: orange;
+                	color: white;
+                	transition: 0.5s;
+                	transform: translate(0px,-20px);
+                }
+                .div6Container img{
+                	height: 200px;
+                	width: 200px;
+                }
+                .div6Container p{
+                	font-size: 15px;
+                	color: black;
+                }
+                .div7{
+                	margin-top: 100px;
+                	background-color: rgb(228, 228, 231);
+                	width: 100%;
+                	height:200px;
+                	align-items: center;
+                	display: flex;
+                	justify-content: center;
+                }
+                .div7 button{
+                	border-radius: 10px;
+                    height: 50px;
+                    width:150px;
+                    background-color: orange;
+                    border:none;
+                }
+                </style>
+    </head>
+
+    <body>
+    	<div class="bodyContainer">
+    		<div class="div1">
+			        <ul>
+			                    <li><a href="https://www.jugnoo.in"><img src="jugnoo_logo2.svg" alt="Jugnoo" style="width:160px;height:45px;margin-right: 44px;margin-top:5px; "></a></li>
+			                    <br>
+			                    <li class="dropdown"><a href="https://www.jugnoo.in/fatafat">FATAFAT</a></li>
+			                    <li class="dropdown">
+			                      <a href="https://www.jugnoo.in/business/" class="dropbtn">BUSINESS▾</a>
+			                      <div class="dropdown-content">
+			                        <a href="https://www.jugnoo.in/delivery-business">DELIVERY</a>
+			                        <a href="https://www.jugnoo.in/jugnootaxi/">TAXI</a>
+			                        <a href="#">CAR RENTAL</a>
+			                        <a href="#">P2P</a>
+			                      </div>
+			                    </li>
+			                    <li class="dropdown">
+			                            <a href="https://www.jugnoo.in/jugnootaxi/resources/" class="dropbtn">RESOURCES▾</a>
+			                            <div class="dropdown-content">
+			                              <a href="https://www.jugnoo.in/delivery-business">BLOGS</a>
+			                              <a href="https://www.jugnoo.in/jugnootaxi/">CASE STUDIES</a>
+			                            </div>
+			                          </li>
+			        </ul>
+	    	</div>
+
+
+            <div class="div2">
+                    <h1>Uber For Trucking App Development And Truck Dispatch Software Solution</h1>
+                    <p>Launch your truck dispatch &amp; logistics business with our Uber Freight Clone customer &amp;
+                    driver apps &amp; powerful dispatcher &amp; admin panel</p>
+                    
+                    <div class="div2Container">
+                        <form method="post">
+                                <div>
+                                <input placeholder="Enter your email">
+                                <span class="error_msg_header"></span>&nbsp;&nbsp;
+                                <button class="getInTouchButton" type="button">Get in Touch</button>
+                                </div>
+                         </form>
+                 	</div>
+            </div>
+	        <div class="div3">
+
+	                <h2 style="text-align: center;padding: 40px;font-family: arial;font-size: 40px; color: grey">White-labeled Uber Freight Clone for <span style="color:orange">	On-Demand Logistics</span></h2>
+		            <div class="div3Container">
+		 	                <div id="div3ContainerBox">
+				                            <span style="text-align: center;"><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/share-1.svg"></span>
+				                            <h3 style="text-align: center;">Startups &amp; <br>Aggregators</h3>
+				                            <br>
+				                            <p style="text-align: center;color: black;">Launch your Uber Freight clone trucking app to seamlessly connect shippers &amp; drivers</p>
+				                            <a href="#"style="text-decoration:none;color:orange;text-align: center;">Get in Touch</a>
+			                </div>
+			                            
+			                            
+			                            
+                            <div id="div3ContainerBox">
+				                            <span style="text-align: center;"><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/group-85.svg"></span>
+				                            <h3 style="text-align: center;">Trucking &amp; Freight<br> Businesses</h3>
+				                            <p style="text-align: center;color: black;">Automate truck dispatch operations &amp; fleet management with Uber Freight like app solution</p>
+				                            <a href="#"style="text-decoration:none;color:orange;text-align: center;">Get in Touch</a>
+			                </div>
+			                            
+			                            
+			                        
+			                <div id="div3ContainerBox">
+				                            <span style="text-align: center;"><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/group-86.svg"></span>
+				                            <h3 style="text-align: center;">Packers &amp;<br>
+				                            Movers</h3>
+				                            <p style="text-align: center;color: black;">Facilitate end-to-end on-demand shifting solutions with a branded Uber for moving app</p>
+				                            <a href="#"style="text-decoration:none;color:orange;text-align: center;">Get in Touch</a>
+                            </div>
+			                              
+		    		</div>
+
+			<div class="div4">
+			    <h2 style="text-align: center;padding: 40px;font-family: arial;font-size: 40px; color: grey">Custom-built <span style="color:orange">Uber for Trucks Solution</span></h2>
+			    <div class="div4Container" >
+			        <button onclick="changeImage('one')">CUSTOMER APP</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <button onclick="changeImage('two')">DRIVER APP</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <button onclick="changeImage('three')">DISPATCHER PANEL</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <button onclick="changeImage('four')">ADMIN DASHBOARD</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+			  	</div>
+			  	<br>
+                <div style="display: flex;flex-direction: row;">
+			         <img style="display: flex;text-align: center;align-content: center; height: 30%;width: 30%" id="image" src="truckj_customer.png" alt="imageNotFound">
+                     <div style="max-height: 400px;display: inline;overflow: auto;">
+                      
+                          <ol>
+                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/merchandise.svg">
+                        <h4>Book Shipments</h4>
+                        <p>Customers can select critical details for their shipment transport on the mobile app</p>
+                        </li>
+
+                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/document.svg">
+                        <h4>Upload Documents </h4>
+                        <p>Enable customers to upload critical shipment documents to ensure smooth transportation</p>
+                        </li>
+                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/tracking-map.svg">
+                        <h4>Real-time Tracking</h4>
+                        <p>Let your customers live track their shipments 24x7 on our truck dispatch app</p>
+                        </li>
+                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/receipt.svg">
+                        <h4>Payments &amp; Receipts</h4>
+                        <p>Enable multiple payment options for customers to ensure convenient &amp; reliable payments</p>
+                        </li>
+                        </ol>
+
+                </div>
+			    </div>
+		    </div>
+
+		    <div class="div5">
+		            <div class="div5Container">
+		                	<h2>Develop Your Reliable Custom Truck Dispatch Software</h2>
+		                	<button>Get In Touch</button>
+		           	</div>
+	        </div>
+
+	        <div class="div6">
+	                <h2 style="text-align: center;padding: 40px;font-family: arial;font-size: 40px; color: grey">Advanced Features for <span style="color:orange">Your Truck Dispatch Business</span></h2>
+	                  	<div class="div6Container">
+	                    		<div>
+	                    			<img src="image-01.png" alt="image">
+	                    			<div>
+	                    				<h5>Custom Promotions</h5>
+	                    				<p>Create fully customized promotional campaigns for discounts & referrals to increase customer base, repeat shipments & customer loyalty.</p>
+	                    			</div>
+	                    		</div>
+	                    		<div>
+	                    			<img src="image-02.png" alt="image">
+	                    			<div>
+	                    				<h5>Auto-Reloading Requests</h5>
+	                    				<p>Ensure the truck space is never under utilized by finding shipments fitting load & location requirements during ongoing tasks.</p>
+	                    			</div>
+	                    		</div>
+	                    		<div>
+	                    			<img src="image-03.png" alt="image">
+	                    			<div>
+	                    				<h5>Platform Integrations</h5>
+	                    				<p>Break no sweat on third party platform integrations for your truck dispatch app with our open, free & secure APIs.</p>
+	                    			</div>
+	                    		</div>
+	                    		<div>
+	                    			<img src="image-04.png" alt="image">
+	                    			<div>
+	                    				<h5>Geoanalytics</h5>
+	                    				<p>Allocate resources & create promotional offers based on custom made geography lines to efficiently manage supply-demand.</p>
+	                    			</div>
+	                    		</div>
+	                  	</div>
+	        </div>
+
+	        <div class="div7">
+	                    	<h2>Losing Money On Half-Empty Trucks?</h2>
+	                    	<button>Get In Touch</button>
+	        </div>
+	        
+	        <div class="div8">
+	                    	
+
+	    	</div>
+</body>
+</html>
