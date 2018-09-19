@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html><head>
         <title>Truck Dispatch Software | Uber For Trucking App Development | Jugnoo </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript">
         	let changeImage = (str) =>{
         		if(str==='one'){
@@ -186,16 +190,20 @@
                 	align-items: flex-start;
                 	align-content: space-between;
                 }
-                .div4Container button{
+                .div4Container button{ 
                 	border-radius: 10px;
                     height: 50px;
-                    width:150px;
-                    background-color: orange;
+                    width:200px;
+                    background-color: white;
                     border:solid;
                     border-color: grey;
                     align-content: center;
                     overflow: auto;
                 }
+                .div4Container button:hover{
+                    background-color: orange;
+                }
+
                 .div5{
                 	display: flex;
                 	align-items: center;
@@ -222,15 +230,13 @@
                     border:none;	
                 }
                 .div6Container{
-                	display: flex;
-                	flex-direction: row;
-                	
                 	justify-content: center;
+                    align-content: center;
                   	padding-left: 20%;
                 	padding-right: 20%;
                 }
                 .div6Container div{
-                	background-color: rgb(228, 228, 231);
+                	
                 }
                 .div6Container div div:hover{
                 	background-color: orange;
@@ -245,6 +251,8 @@
                 .div6Container p{
                 	font-size: 15px;
                 	color: black;
+                    text-align: left;
+                    padding-right: 30%;
                 }
                 .div7{
                 	margin-top: 100px;
@@ -352,26 +360,61 @@
 			  	<br>
                 <div style="display: flex;flex-direction: row;">
 			         <img style="display: flex;text-align: center;align-content: center; height: 30%;width: 30%" id="image" src="truckj_customer.png" alt="imageNotFound">
-                     <div style="max-height: 400px;display: inline;overflow: auto;">
-                      
-                          <ol>
-                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/merchandise.svg">
-                        <h4>Book Shipments</h4>
-                        <p>Customers can select critical details for their shipment transport on the mobile app</p>
-                        </li>
+                     <div style="max-height: 400px;" class="container">
+                             
+                          <ol style="list-style-type: none;">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/merchandise.svg">
+                                    <h4 style=" font-family: 'Nunito', sans-serif!important;  margin-top: 10px;margin-bottom: 10px; font-weight: 900;line-height: 1;letter-spacing: -0.2px; color: #353542;font-size: 16px;">Book Shipments</h4>
+                                    <p style="font-family: 'Nunito', sans-serif!important;vertical-align: baseline;    box-sizing: border-box;font-style: normal;
+                                    text-align: left;
+    font-stretch: normal;
+    line-height: normal;font-size: 14px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #43484c;opacity: 0.85;padding: 10%;padding-top: 5%;padding-left: 0;">Customers can select critical details for their shipment transport on the mobile app</p>
+                                    </li>
+                                </div>
+                                <div class="col-sm-6">
+                                    <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/document.svg">
+                                    <h4 style=" font-family: 'Nunito', sans-serif!important;  margin-top: 10px;margin-bottom: 10px; font-weight: 900;line-height: 1;letter-spacing: -0.2px; color: #353542;font-size: 16px;">Upload Documents </h4>
+                                    <p style="font-family: 'Nunito', sans-serif!important;vertical-align: baseline;    box-sizing: border-box;font-style: normal;
+                                    text-align: left;
+    font-stretch: normal;
+    line-height: normal;font-size: 14px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #43484c;opacity: 0.85;padding: 10%;padding-top: 5%;padding-left: 0;">Enable customers to upload critical shipment documents to ensure smooth transportation</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/tracking-map.svg">
+                                    <h4 style="font-family: 'Nunito', sans-serif!important;  margin-top: 10px;margin-bottom: 10px; font-weight: 900;line-height: 1;letter-spacing: -0.2px; color: #353542;font-size: 16px;">Real-time Tracking</h4>
+                                    <p style="font-family: 'Nunito', sans-serif!important;vertical-align: baseline;    box-sizing: border-box;font-style: normal;text-align: left;
+    font-stretch: normal;
+    line-height: normal;font-size: 14px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #43484c;opacity: 0.85;padding: 10%;padding-top: 5%;padding-left: 0;">Let your customers live track their shipments 24x7 on our truck dispatch app</p>
+                                    </li>
+                                </div>
+                                <div class="col-sm-6">
+                                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/receipt.svg">
+                                        <h4 style="font-family: 'Nunito', sans-serif!important;  margin-top: 10px;margin-bottom: 10px; font-weight: 900;line-height: 1;letter-spacing: -0.2px; color: #353542;font-size: 16px;">Payments &amp; Receipts</h4>
+                                        <p style="font-family: 'Nunito', sans-serif!important;vertical-align: baseline;    box-sizing: border-box;font-style: normal;
+                                        text-align: left;
 
-                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/document.svg">
-                        <h4>Upload Documents </h4>
-                        <p>Enable customers to upload critical shipment documents to ensure smooth transportation</p>
-                        </li>
-                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/tracking-map.svg">
-                        <h4>Real-time Tracking</h4>
-                        <p>Let your customers live track their shipments 24x7 on our truck dispatch app</p>
-                        </li>
-                        <li><img src="https://www.jugnoo.in/jugnootaxi/wp-content/uploads/2018/09/receipt.svg">
-                        <h4>Payments &amp; Receipts</h4>
-                        <p>Enable multiple payment options for customers to ensure convenient &amp; reliable payments</p>
-                        </li>
+    font-stretch: normal;
+    line-height: normal;font-size: 14px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #43484c;opacity: 0.85;padding: 10%;padding-top: 5%;padding-left: 0;">Enable multiple payment options for customers to ensure convenient &amp; reliable payments</p>
+                                        </li>
+                                </div>
+                            </div>
                         </ol>
 
                 </div>
@@ -387,35 +430,40 @@
 
 	        <div class="div6">
 	                <h2 style="text-align: center;padding: 40px;font-family: arial;font-size: 40px; color: grey">Advanced Features for <span style="color:orange">Your Truck Dispatch Business</span></h2>
-	                  	<div class="div6Container">
-	                    		<div>
-	                    			<img src="image-01.png" alt="image">
-	                    			<div>
+	                  	<div class="container div6Container">
+	                    		<div class="row">
+	                    			
+	                    			<div class="col-sm-6">
+                                        <img src="image-01.png" class="img-thumbnail img-responsive" alt="image">
 	                    				<h5>Custom Promotions</h5>
-	                    				<p>Create fully customized promotional campaigns for discounts & referrals to increase customer base, repeat shipments & customer loyalty.</p>
+	                    				<p style="color:black;">Create fully customized promotional campaigns for discounts & referrals to increase customer base, repeat shipments & customer loyalty.</p>
 	                    			</div>
-	                    		</div>
-	                    		<div>
-	                    			<img src="image-02.png" alt="image">
-	                    			<div>
+	                    		
+	                    			
+	                    			<div class="col-sm-6">
+                                        <img src="image-02.png" class="img-thumbnail img-responsive" alt="image">
 	                    				<h5>Auto-Reloading Requests</h5>
-	                    				<p>Ensure the truck space is never under utilized by finding shipments fitting load & location requirements during ongoing tasks.</p>
+	                    				<p style="color:black;">Ensure the truck space is never under utilized by finding shipments fitting load & location requirements during ongoing tasks.</p>
 	                    			</div>
-	                    		</div>
-	                    		<div>
-	                    			<img src="image-03.png" alt="image">
-	                    			<div>
+	                    		
+                                </div>
+                                <br>
+	                    		<div class="row">
+	                    			
+	                    			<div class="col-sm-6">
+                                        <img src="image-03.png" class="img-thumbnail img-responsive" alt="image">
 	                    				<h5>Platform Integrations</h5>
-	                    				<p>Break no sweat on third party platform integrations for your truck dispatch app with our open, free & secure APIs.</p>
+	                    				<p style="color:black;">Break no sweat on third party platform integrations for your truck dispatch app with our open, free & secure APIs.</p>
 	                    			</div>
-	                    		</div>
-	                    		<div>
-	                    			<img src="image-04.png" alt="image">
-	                    			<div>
+	                    		
+	                    			
+	                    			<div class="col-sm-6">
+                                        <img src="image-04.png" class="img-thumbnail img-responsive" alt="image">
 	                    				<h5>Geoanalytics</h5>
-	                    				<p>Allocate resources & create promotional offers based on custom made geography lines to efficiently manage supply-demand.</p>
+	                    				<p style="color:black;">Allocate resources & create promotional offers based on custom made geography lines to efficiently manage supply-demand.</p>
 	                    			</div>
-	                    		</div>
+                                </div>    
+	                    		
 	                  	</div>
 	        </div>
 
